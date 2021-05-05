@@ -1,0 +1,29 @@
+.navBar {
+    text-align:center;
+    position:relative;
+}
+
+.navBar img {
+    height:54px;
+    position:absolute;
+    left:8%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+
+.navBar a {
+    margin:2em 0;
+    color:rgba(0, 0, 0, 1);
+    display:inline-block;
+    font-size:24px;
+    font-weight:bolder;
+    padding:0 1.5em;
+}
+
+.navBar a:first-child {
+    padding-left:0;
+}
+
+.navBar a:last-child {
+    padding-right:0;
+}

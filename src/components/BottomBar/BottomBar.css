@@ -1,0 +1,33 @@
+.bottomBar {
+    display:inline-block;
+    font-size:24px;
+    font-weight:bolder;
+    position:relative;
+    width:100%;
+}
+
+.bottomBar img {
+    height:54px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+
+.bottomBar div {
+    height:8em;
+    writing-mode:vertical-lr;
+    margin:2em 0 2em auto;
+}
+
+.bottomBar a {
+    color:rgba(0, 0, 0, 1);
+    writing-mode:horizontal-tb;
+    width:14em;
+    line-height:1.5;
+}
+
+
+.bottomBar a:not(:nth-last-child(n+6)) {
+    width:10em;
+}
