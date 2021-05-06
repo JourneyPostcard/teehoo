@@ -19,7 +19,7 @@
   </div>
 </template>
 <script>
-import './Home.css'
+import './Home.scss'
 
 export default {
   name: 'Home',

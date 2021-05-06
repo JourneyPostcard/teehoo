@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import './BottomBar.css'
+import './BottomBar.scss'
 
 export default {}
 </script>
