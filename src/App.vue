@@ -24,7 +24,7 @@ body {
   padding:0;
   border:0;
   font-size:12px;
-  font-family:PingFangSC-Semibold sans-serif;
+  font-family:"Bal10", "PingFang SC", "Hiragino Sans GB", "Hiragino Sans GB W3", "Source Han Sans", "Noto Sans CJK Sc", "Microsoft YaHei", "Microsoft Jhenghei", "Avenir", "Helvetica Neue", "Arial", sans-serif;
   background-color:#f8f8f8;
   color:#666;
   -webkit-text-size-adjust:none;

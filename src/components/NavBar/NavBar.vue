@@ -10,6 +10,7 @@
 
 <script>
 import './NavBar.scss'
+import './NavBar2.scss'
 
 export default {}
 </script>
