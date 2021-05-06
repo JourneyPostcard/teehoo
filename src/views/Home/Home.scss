@@ -1,74 +1,78 @@
-.home {
-  width: 1200px;
-  margin: 0 auto;
-  color: rgba(0, 0, 0, 1);
-  text-align: center;
-}
+@import '~@/global.scss';
 
-.kits {
-  color: rgba(0, 0, 0, 1);
-  width: 960px;
-  margin: 0 auto;
+@include media_pc() {
+  .home {
+    width: 1200px;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+  }
 
-  img {
+  .kits {
+    color: rgba(0, 0, 0, 1);
     width: 960px;
-    height: 700px;
-    object-fit: cover;
+    margin: 0 auto;
+
+    img {
+      width: 960px;
+      height: 700px;
+      object-fit: cover;
+    }
+
+    p {
+      font-weight: bolder;
+      font-size: 50px;
+      line-height: 2.5;
+    }
+
+    span {
+      font-size: 28px;
+      display: inline-block;
+      width: 50%;
+      text-align: justify;
+      text-align-last: center;
+    }
+
+    div {
+      font-size: 28px;
+      font-weight: bolder;
+      margin: .5em 0 1em;
+    }
   }
 
-  p {
-    font-weight: bolder;
-    font-size: 50px;
-    line-height: 2.5;
-  }
+  .about {
+    color: #42210b;
+    background: #f2f2f2;
 
-  span {
-    font-size: 28px;
-    display: inline-block;
-    width: 50%;
-    text-align: justify;
-    text-align-last: center;
-  }
+    h1 {
+      font-size: 40px;
+      display: inline-block;
+      margin-top: 1em;
+    }
 
-  div {
-    font-size: 28px;
-    font-weight: bolder;
-    margin: .5em 0 1em;
-  }
-}
+    h2 {
+      font-size: 24px;
+      margin: 1em 0 4em;
+    }
 
-.about {
-  color: #42210b;
-  background: #f2f2f2;
+    div {
+      width: 65%;
+      display: inline-flex;
+      justify-content: space-between;
+    }
 
-  h1 {
-    font-size: 40px;
-    display: inline-block;
-    margin-top: 1em;
-  }
+    img {
+      width: 330px;
+      height: 220px;
+    }
 
-  h2 {
-    font-size: 24px;
-    margin: 1em 0 4em;
-  }
-
-  div {
-    width: 65%;
-    display: inline-flex;
-    justify-content: space-between;
-  }
-
-  img {
-    width: 330px;
-    height: 220px;
-  }
-
-  p {
-    font-size: 18px;
-    font-weight: bolder;
-    width: 75%;
-    display: inline-block;
-    text-align: justify;
-    margin: 3em 0;
+    p {
+      font-size: 18px;
+      font-weight: bolder;
+      width: 75%;
+      display: inline-block;
+      text-align: justify;
+      margin: 3em 0;
+    }
   }
 }

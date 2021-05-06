@@ -1,32 +1,36 @@
-.bottomBar {
-  display: inline-block;
-  font-size: 24px;
-  font-weight: bolder;
-  position: relative;
-  width: 100%;
+@import '~@/global.scss';
 
-  img {
-    height: 54px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+@include media_pc() {
+  .bottomBar {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bolder;
+    position: relative;
+    width: 100%;
 
-  div {
-    height: 8em;
-    writing-mode: vertical-lr;
-    margin: 2em 0 2em auto;
-  }
+    img {
+      height: 54px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-  a {
-    color: rgba(0, 0, 0, 1);
-    writing-mode: horizontal-tb;
-    width: 14em;
-    line-height: 1.5;
-  }
+    div {
+      height: 8em;
+      writing-mode: vertical-lr;
+      margin: 2em 0 2em auto;
+    }
 
-  a:not(:nth-last-child(n+6)) {
-    width: 10em;
+    a {
+      color: rgba(0, 0, 0, 1);
+      writing-mode: horizontal-tb;
+      width: 14em;
+      line-height: 1.5;
+    }
+
+    a:not(:nth-last-child(n+6)) {
+      width: 10em;
+    }
   }
 }

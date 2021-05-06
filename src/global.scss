@@ -1,0 +1,15 @@
+//媒体查询统一区间（PC端）
+@mixin media_pc() {
+  @media (min-width: 1200px) {
+    .nonConvertWhenPC {
+      @content
+    }
+  }
+}
+
+//媒体查询统一区间（移动端）
+@mixin media_mobile() {
+  @media (max-width: 1199px) {
+    @content
+  }
+}
