@@ -9,7 +9,8 @@
 </template>
 
 <script>
-import './NavBar.css'
+import './NavBar.scss'
+import './NavBar2.scss'
 
 export default {}
 </script>

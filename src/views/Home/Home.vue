@@ -19,7 +19,8 @@
   </div>
 </template>
 <script>
-import './Home.css'
+import './Home.scss'
+import './Home2.scss'
 
 export default {
   name: 'Home',
