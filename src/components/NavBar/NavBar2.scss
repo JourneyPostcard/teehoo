@@ -1,22 +1,81 @@
 @import '~@/global.scss';
 
 @include media_mobile() {
+  .navBarContainer {
+    display: inline;
+  }
+
   .navBar {
+    display: none;
+  }
+
+  .navBarMobile {
+    $navBarHeight: 48px;
+
     position: sticky;
     top: 0;
-    background: #fff;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 4em;
+    height: $navBarHeight;
 
-    a {
-      color: rgba(0, 0, 0, 1);
-      font-size: 16px;
+    .logoContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: $navBarHeight;
+      background: #fff;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07);
+      position: relative;
+      z-index: 2;
     }
 
-    img {
+    .logoContainer img {
       height: 34px;
+    }
+
+    .linkContainer {
+      position: relative;
+      height: calc(100vh - #{$navBarHeight})
+    }
+
+    .linkBg {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .linkContent {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 100%;
+      background: #fff;
+      position: relative;
+      z-index: 1;
+      transform: translateX(-100%);
+      transition: transform .3s ease-in-out;
+    }
+
+    .linkContent a {
+      width: 100%;
+      line-height: 3em;
+      padding-left: 2em;
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 1);
+      font-size: 16px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .navBarMobile.spread {
+    .linkBg {
+      display: block;
+      background: rgba(0, 2, 3, .5);
+    }
+
+    .linkContent {
+      transform: none;
     }
   }
 }
