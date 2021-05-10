@@ -20,6 +20,8 @@
       height: 8em;
       writing-mode: vertical-lr;
       margin: 2em 0 2em auto;
+      z-index: 1;
+      position: relative;
     }
 
     a {
